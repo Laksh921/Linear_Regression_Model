@@ -89,7 +89,7 @@ for i, lr in enumerate(learning_rates):
 plt.tight_layout()
 plt.show()
 
-# Optional: Print optimal parameters for the learning rates (You can include them in the report)
+# Print optimal parameters for the learning rates (You can include them in the report)
 for lr in learning_rates:
     theta_optimal_lr, cost_history_lr = gradient_descent(X, Y, theta_initial, lr, num_iters=1000)
     print(f"Optimal parameters for lr={lr}:")
@@ -208,7 +208,7 @@ axs[2].set_ylabel('Cost')
 plt.tight_layout()
 plt.show()
 
-# Optional: Print optimal parameters and final cost function values for each method
+# Print optimal parameters and final cost function values for each method
 print("Batch Gradient Descent:")
 print(f"Optimal parameters θ₀ = {theta_optimal_batch[0]}, θ₁ = {theta_optimal_batch[1]}")
 print(f"Final cost: {cost_history_batch[-1]}\n")
